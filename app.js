@@ -31,13 +31,13 @@ document.addEventListener('click',async e=>{
  if(s){if(navigator.share){try{await navigator.share({title:s.dataset.share,url:s.dataset.url})}catch(_){}}else{await copiar(s.dataset.url)}}
 });
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
-const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<em>$1</em>');
+const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<em>$1</em>').replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');
 const ex=a=>a.ex?'<span class="exemplo">exemplo</span>':'';
 
 function capa(a){
  const rotulo=esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou');
  if(typeof FOTO[a.id]==='string'&&FOTO[a.id].startsWith('cartaz'))return `<div class="capa cartaz c-${a.ed}" style="background:${a.cor||'var(--amar)'}"><span class="tag mao">${rotulo}</span><span class="big">${esc(a.art)}</span><img src="img/${FOTO[a.id]}" alt="Cartaz do filme" loading="lazy"></div>`;
- if(FOTO[a.id]){const f=FOTO[a.id],nat=typeof f==="string";return `<div class="capa foto${nat?" natural":""} c-${a.ed}"><img src="img/${nat?f:"f"+f+".jpg"}" alt="${nat?"Cartaz do filme":""}" loading="lazy"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${nat?'':`<span class="big">${esc(a.art)}</span>`}</div>`}
+ if(FOTO[a.id]){const f=FOTO[a.id],nat=typeof f==="string";return `<div class="capa foto${nat?" natural":""} c-${a.ed}"><img src="img/${nat?f:"f"+f+".jpg"}" alt="" loading="lazy"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${nat?'':`<span class="big">${esc(a.art)}</span>`}</div>`}
  const rosto=a.ed==='historias'?`<svg class="rosto" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="34" r="20" fill="#1D2FE0"/><path d="M14 100c2-26 18-40 36-40s34 14 36 40z" fill="#1D2FE0"/><path d="M30 30c4-16 34-18 40 0" fill="none" stroke="#101636" stroke-width="5"/></svg>`:'';
  return `<div class="capa c-${a.ed}" role="img" aria-label="Ilustração: ${esc(EDS[a.ed]?EDS[a.ed].n:'História')}"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${rosto}<span class="big">${esc(a.art)}</span></div>`;
 }
