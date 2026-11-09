@@ -36,17 +36,17 @@ const ex=a=>a.ex?'<span class="exemplo">exemplo</span>':'';
 
 function capa(a){
  const rotulo=esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou');
- if(typeof FOTO[a.id]==='string'&&FOTO[a.id].startsWith('cartaz'))return `<div class="capa cartaz c-${a.ed}" style="background:${a.cor||'var(--amar)'}"><span class="tag mao">${rotulo}</span><span class="big">${esc(a.art)}</span><img src="img/${FOTO[a.id]}" alt="Cartaz do filme" loading="lazy"></div>`;
- if(FOTO[a.id]){const f=FOTO[a.id],nat=typeof f==="string";return `<div class="capa foto${nat?" natural":""} c-${a.ed}"><img src="img/${nat?f:"f"+f+".jpg"}" alt="" loading="lazy"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${nat?'':`<span class="big">${esc(a.art)}</span>`}</div>`}
+ if(typeof FOTO[a.id]==='string'&&FOTO[a.id].startsWith('cartaz'))return `<div class="capa cartaz c-${a.ed}" style="background:${a.cor||'var(--amar)'}"><span class="tag mao">${rotulo}</span><span class="big">${esc(a.art)}</span><img src="/img/${FOTO[a.id]}" alt="Cartaz do filme" loading="lazy"></div>`;
+ if(FOTO[a.id]){const f=FOTO[a.id],nat=typeof f==="string";return `<div class="capa foto${nat?" natural":""} c-${a.ed}"><img src="/img/${nat?f:"f"+f+".jpg"}" alt="" loading="lazy"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${nat?'':`<span class="big">${esc(a.art)}</span>`}</div>`}
  const rosto=a.ed==='historias'?`<svg class="rosto" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="34" r="20" fill="#1D2FE0"/><path d="M14 100c2-26 18-40 36-40s34 14 36 40z" fill="#1D2FE0"/><path d="M30 30c4-16 34-18 40 0" fill="none" stroke="#101636" stroke-width="5"/></svg>`:'';
  return `<div class="capa c-${a.ed}" role="img" aria-label="Ilustração: ${esc(EDS[a.ed]?EDS[a.ed].n:'História')}"><span class="circ"></span><span class="tag mao">${esc(EDS[a.ed]?EDS[a.ed].n.toLowerCase():'quem passou')}</span>${rosto}<span class="big">${esc(a.art)}</span></div>`;
 }
 function card(a){
- return `<a class="card" href="#/artigo/${a.id}">${capa(a)}<span class="ed">${EDS[a.ed]?EDS[a.ed].n:'História'}${ex(a)}</span><h3>${esc(a.t)}</h3><p>${esc(a.d)}</p><span class="meta">${a.dt}, ${a.min} min de leitura</span></a>`;
+ return `<a class="card" href="/${a.id}/">${capa(a)}<span class="ed">${EDS[a.ed]?EDS[a.ed].n:'História'}${ex(a)}</span><h3>${esc(a.t)}</h3><p>${esc(a.d)}</p><span class="meta">${a.dt}, ${a.min} min de leitura</span></a>`;
 }
 const MA='https://www.modoaprovado.com.br';
 const ACOES={
- redacao:{c:'',k:'correção de redação',h:'Descubra onde a sua redação perde pontos',p:'Escreva aqui no Enem Todo Dia e receba a correção da sua primeira redação completa, de presente: nota de treino, as cinco competências e o que ajustar.',b:'Corrigir minha redação',u:'#/corretor'},
+ redacao:{c:'',k:'correção de redação',h:'Descubra onde a sua redação perde pontos',p:'Escreva aqui no Enem Todo Dia e receba a correção da sua primeira redação completa, de presente: nota de treino, as cinco competências e o que ajustar.',b:'Corrigir minha redação',u:'/corretor/'},
  questoes:{c:'am',k:'questões oficiais',h:'Treine com as questões que já caíram no Enem',p:'As trilhas inteligentes do Modo Aprovado reúnem questões oficiais das últimas edições, com explicação a cada erro. Você sabe na hora o que revisar.',b:'Começar uma trilha inteligente',u:MA},
  tri:{c:'tn',k:'nota por TRI',h:'Quanto você tiraria se a prova fosse hoje?',p:'Nas trilhas do Modo Aprovado, o seu desempenho é calculado por TRI, o mesmo método do Enem. É uma estimativa de treino para acompanhar a sua evolução semana a semana.',b:'Ver minha estimativa por TRI',u:MA},
  personaliza:{c:'papel',k:'trilha inteligente',h:'Estude o que você mais precisa',p:'O Modo Aprovado percebe onde você tem mais dificuldade e ajusta a sua trilha. Menos tempo no que você já domina, mais tempo no que vai subir a sua nota.',b:'Montar minha trilha',u:MA},
@@ -57,9 +57,9 @@ const EDCTA={redacao:'redacao',materias:'questoes',estudo:'personaliza',carreira
 const cta=k=>{const a=ACOES[k]||ACOES.redacao;return `<div class="box ${a.c}"><span class="mao kick">Modo Aprovado · ${a.k}</span><h3>${a.h}</h3><p>${a.p}</p>${a.$?'<div class="preco"><small>12x de</small> <b>R$ 9,90</b></div>':''}<a class="btn ${a.c==='am'?'':'am'}" href="${a.u}"${a.u.startsWith('http')?' target="_blank" rel="noopener"':''}>${a.b}</a></div>`};
 
 function navs(rota){
- const items=Object.keys(EDS).map(k=>`<a href="#/${k}" class="${rota===k?'on':''}">${EDS[k].n}</a>`).join('');
+ const items=Object.keys(EDS).map(k=>`<a href="/${k}/" class="${rota===k?'on':''}">${EDS[k].n}</a>`).join('');
  menu.innerHTML=items;mnav.innerHTML=items;
- fnav.innerHTML=items+'<a href="#/sobre">Sobre</a><a href="#/sobre">Contato</a><a href="#/sobre">Privacidade</a>';
+ fnav.innerHTML=items+'<a href="/sobre/">Sobre</a><a href="/sobre/">Contato</a><a href="/sobre/">Privacidade</a>';
 }
 
 function home(){
@@ -73,26 +73,26 @@ function home(){
   <div>
    <h1 class="syne">${['O','Enem','inteiro,','sem'].map((w,i)=>`<span class="w" style="animation-delay:${i*.09}s">${w}</span>`).join(' ')} <em class="w" style="animation-delay:.36s">enrolação</em><span class="w" style="animation-delay:.45s">.</span></h1>
    <p class="lead">Do edital à redação nota mil: o Enem explicado em linguagem simples, todo dia.</p>
-   <div class="acoes"><a class="btn lg" href="#/corretor">Corrigir minha redação</a><a class="lnk" href="#/estudo">Ver guias de estudo</a></div>
+   <div class="acoes"><a class="btn lg" href="/corretor/">Corrigir minha redação</a><a class="lnk" href="/estudo/">Ver guias de estudo</a></div>
    <span class="nota mao">escreva aqui a primeira linha da sua aprovação</span>
   </div>
-  <a class="destaque" href="#/artigo/${d.id}">${capa(d)}<h3 class="syne">${esc(d.t)}</h3><span class="meta">${EDS[d.ed].n}, ${d.min} min de leitura</span><span class="selo mao">destaque do dia</span></a>
+  <a class="destaque" href="/${d.id}/">${capa(d)}<h3 class="syne">${esc(d.t)}</h3><span class="meta">${EDS[d.ed].n}, ${d.min} min de leitura</span><span class="selo mao">destaque do dia</span></a>
  </div></div>
 </div>
-<div class="tick"><div class="tk">${(()=>{const t=A.filter(a=>a.ed!=='historias').map(a=>`<a href="#/artigo/${a.id}">${esc(a.t)}</a>`).join('');return t+t})()}</div></div>
+<div class="tick"><div class="tk">${(()=>{const t=A.filter(a=>a.ed!=='historias').map(a=>`<a href="/${a.id}/">${esc(a.t)}</a>`).join('');return t+t})()}</div></div>
 <section><div class="wrap">
  <div class="sh"><h2 class="syne">Hoje na pauta</h2><span class="mao">resumido, com a fonte</span></div>
  <div class="cards">${n.map(card).join('')}</div>
 </div></section>
 <div class="faixa"><div class="wrap">
- ${Object.keys(EDS).map(k=>`<a href="#/${k}"><span class="syne">${EDS[k].n}</span><p>${EDS[k].d}</p></a>`).join('')}
+ ${Object.keys(EDS).map(k=>`<a href="/${k}/"><span class="syne">${EDS[k].n}</span><p>${EDS[k].d}</p></a>`).join('')}
 </div></div>
 <section><div class="wrap">
  <div class="sh"><h2 class="syne">Mais lidas da semana</h2></div>
- <div class="lidas">${lidas.map((a,i)=>`<a href="#/artigo/${a.id}"><b>${i+1}</b><span>${esc(a.t)}</span></a>`).join('')}</div>
+ <div class="lidas">${lidas.map((a,i)=>`<a href="/${a.id}/"><b>${i+1}</b><span>${esc(a.t)}</span></a>`).join('')}</div>
 </div></section>
 <section style="background:#eef0f7"><div class="wrap cta-corr">
- <div><h2 class="syne">Descubra seu ponto de partida.</h2><p>Escreva uma redação e receba a correção completa, de presente. No Modo Aprovado, ela vira um plano de estudo que se ajusta ao seu nível.</p><a class="btn lg" href="#/corretor">Corrigir minha redação</a></div>
+ <div><h2 class="syne">Descubra seu ponto de partida.</h2><p>Escreva uma redação e receba a correção completa, de presente. No Modo Aprovado, ela vira um plano de estudo que se ajusta ao seu nível.</p><a class="btn lg" href="/corretor/">Corrigir minha redação</a></div>
  <div class="mini mao">
   <div class="l"><i>1</i><span>Em um país de dimensões continentais,</span></div>
   <div class="l"><i>2</i><span>o acesso à educação ainda é desigual.</span></div>
@@ -105,7 +105,7 @@ function home(){
 </div></section>
 <section><div class="wrap">
  <div class="sh"><h2 class="syne">Quem passou conta como fez</h2><span class="mao">história real</span></div>
- <a class="hist" href="#/artigo/historia-mateus">${capa(byId('historia-mateus'))}<div><blockquote class="mao">"Não tinha noção da minha capacidade."</blockquote><div class="quem">Mateus, 17 anos, aprovado em Medicina na UFC</div><div class="onde">Escola pública, quatro horas de estudo por dia</div><p class="lnk">Ler a história completa</p></div></a>
+ <a class="hist" href="/historia-mateus/">${capa(byId('historia-mateus'))}<div><blockquote class="mao">"Não tinha noção da minha capacidade."</blockquote><div class="quem">Mateus, 17 anos, aprovado em Medicina na UFC</div><div class="onde">Escola pública, quatro horas de estudo por dia</div><p class="lnk">Ler a história completa</p></div></a>
 </div></section>`;
 }
 
@@ -123,11 +123,11 @@ function artigo(id){
   if(p.startsWith('CTA'))return cta(p.split(':')[1]||EDCTA[a.ed]);
   if(p.startsWith('## '))return `<h2>${md(p.slice(3))}</h2>`;
   if(p.startsWith('- '))return '<ul>'+p.split('\n').map(l=>`<li>${md(l.slice(2))}</li>`).join('')+'</ul>';
-  if(p.startsWith('!')){const [src,cap]=p.slice(1).split('|');return `<figure class="fig"><img src="${src}" alt="${esc(cap)}" loading="lazy"><figcaption>${esc(cap)}</figcaption></figure>`}
+  if(p.startsWith('!')){const [src,cap]=p.slice(1).split('|');return `<figure class="fig"><img src="${src.startsWith('/')?src:'/'+src}" alt="${esc(cap)}" loading="lazy"><figcaption>${esc(cap)}</figcaption></figure>`}
   if(p.startsWith('> '))return `<div class="dica"><span class="mao">anota aí</span>${md(p.slice(2))}</div>`;
   return `<p>${md(p)}</p>`;
  }).join('');
- const url=`${SITE}/#/artigo/${a.id}`,txt=`${a.t} | Enem Todo Dia`,u=encodeURIComponent(url),t=encodeURIComponent(txt);
+ const url=`${SITE}/${a.id}/`,txt=`${a.t} | Enem Todo Dia`,u=encodeURIComponent(url),t=encodeURIComponent(txt);
  const fontes=a.fonte?`<div class="fontes"><b>Fontes</b><ul>${a.fonte.map(f=>`<li><a href="${f.u}" target="_blank" rel="noopener">${esc(f.n)}</a></li>`).join('')}</ul></div>`:'';
  const share=`<div class="share"><span class="mao">manda pra quem vai fazer a prova</span><h3>Compartilhe este artigo</h3><div class="sbtns">
   <a class="sb wa" href="https://wa.me/?text=${t}%20${u}" target="_blank" rel="noopener">${IC.wa}WhatsApp</a>
@@ -139,7 +139,7 @@ function artigo(id){
  </div><p class="obs">Para o Instagram, copie o link e cole no seu story.</p></div>`;
  const rel=A.filter(x=>x.ed===a.ed&&x.id!==a.id).concat(A.filter(x=>x.ed==='redacao'&&x.id!==a.id)).filter((x,i,arr)=>arr.indexOf(x)===i).slice(0,3);
  return `<div class="wrap"><article class="art">
- <a class="ed" href="#/${EDS[a.ed]?a.ed:''}">${ed.n}</a>${ex(a)}
+ <a class="ed" href="/${EDS[a.ed]?a.ed+'/':''}">${ed.n}</a>${ex(a)}
  <h1 class="syne">${esc(a.t)}</h1>
  <p class="dek">${esc(a.d)}</p>
  <div class="by"><span class="av">${a.por?'LG':'A'}</span><span>Por ${esc(a.por||'Admin')} · atualizado em ${a.dt} · ${a.min} min de leitura</span></div>
@@ -204,15 +204,15 @@ function ligarCorretor(){
   else if(!document.getElementById('ok').checked)msg='Marque a caixa de consentimento para continuar.';
   if(msg){er.textContent=msg;er.style.display='block';return}
   er.style.display='none';
-  if(document.getElementById('site').value){location.hash='#/enviada';return}
-  if(!ENDPOINT_REDACAO){location.hash='#/enviada';return}
+  if(document.getElementById('site').value){ir('/enviada/');return}
+  if(!ENDPOINT_REDACAO){ir('/enviada/');return}
   bt.disabled=true;bt.textContent='Enviando a sua redação...';
   try{
    const r=await fetch(ENDPOINT_REDACAO,{method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({tema:document.getElementById('tema').value.trim(),texto:t.value,email:em,whatsapp:wa,consentimento:true,origem:'enemtododia'})});
    const j=await r.json().catch(()=>({}));
    if(!r.ok||!j.token)throw new Error(j.erro||'');
-   location.hash='#/enviada';
+   ir('/enviada/');
    location.href=`${MA}/redacao/?r=${encodeURIComponent(j.token)}&${UTM}`;
   }catch(e){
    er.textContent=e.message||'Não conseguimos enviar agora. Confira a sua internet e tente de novo em instantes.';er.style.display='block';
@@ -234,8 +234,8 @@ function sobre(){
 }
 
 function render(){
- const p=(location.hash.replace(/^#\/?/,'')||'').split('/');
- const r=p[0];let html;
+ const s=location.pathname.replace(/^\/|\/$/g,'').split('/')[0];
+ const r=byId(s)?'artigo':s,p=[r,s];let html;
  if(!r)html=home();
  else if(EDS[r])html=editoria(r);
  else if(r==='artigo')html=artigo(p[1]);
@@ -293,4 +293,8 @@ addEventListener('scroll',onScroll,{passive:true});
 document.addEventListener('pointerdown',e=>{const b=e.target.closest('.btn');if(!b||RM)return;const r=b.getBoundingClientRect(),s=Math.max(r.width,r.height),sp=document.createElement('span');
  sp.className='rp';sp.style.cssText=`width:${s}px;height:${s}px;left:${e.clientX-r.left-s/2}px;top:${e.clientY-r.top-s/2}px`;b.appendChild(sp);setTimeout(()=>sp.remove(),650)});
 document.querySelector('.gig').innerHTML='EnemTodoDia'.split('').map((ch,i)=>`<span class="l${i>7?' v':''}">${ch}</span>`).join('');
-window.addEventListener('hashchange',render);render();
+function ir(u){history.pushState(null,'',u);render()}
+document.addEventListener('click',e=>{const l=e.target.closest('a[href^="/"]');if(!l||l.target||e.ctrlKey||e.metaKey||e.shiftKey||e.button)return;e.preventDefault();ir(l.getAttribute('href'))});
+window.addEventListener('popstate',render);
+{const h=location.hash.match(/^#\/(?:artigo\/)?([a-z0-9-]*)/);if(h)history.replaceState(null,'','/'+(h[1]?h[1]+'/':''))}
+render();
