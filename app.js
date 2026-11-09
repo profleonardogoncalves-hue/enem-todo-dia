@@ -142,7 +142,7 @@ function artigo(id){
  <a class="ed" href="#/${EDS[a.ed]?a.ed:''}">${ed.n}</a>${ex(a)}
  <h1 class="syne">${esc(a.t)}</h1>
  <p class="dek">${esc(a.d)}</p>
- <div class="by"><span class="av">MA</span><span>Por Equipe Modo Aprovado · atualizado em ${a.dt} · ${a.min} min de leitura</span></div>
+ <div class="by"><span class="av">A</span><span>Por Admin · atualizado em ${a.dt} · ${a.min} min de leitura</span></div>
  ${capa(a)}${a.leg?`<p class="leg">${a.leg}</p>`:``}
  <div class="corpo">${corpo}</div>
  ${fontes}${share}
