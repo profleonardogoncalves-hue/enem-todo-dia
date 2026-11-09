@@ -72,7 +72,7 @@ function home(){
  <div class="wrap"><div class="in grid">
   <div>
    <h1 class="syne">${['O','Enem','inteiro,','sem'].map((w,i)=>`<span class="w" style="animation-delay:${i*.09}s">${w}</span>`).join(' ')} <em class="w" style="animation-delay:.36s">enrolação</em><span class="w" style="animation-delay:.45s">.</span></h1>
-   <p class="lead">Notícias, guias de estudo e correção de redação para quem vai fazer a prova e quer saber exatamente o que fazer.</p>
+   <p class="lead">Notícias, dicas e, principalmente, muita ajuda para quem vai fazer o Enem. Todo dia.</p>
    <div class="acoes"><a class="btn lg" href="#/corretor">Corrigir minha redação</a><a class="lnk" href="#/estudo">Ver guias de estudo</a></div>
    <span class="nota mao">escreva aqui a primeira linha da sua aprovação</span>
   </div>
