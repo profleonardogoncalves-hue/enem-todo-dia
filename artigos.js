@@ -1,0 +1,224 @@
+/* Conteúdo do protótipo Enem Todo Dia.
+   Notícias: fatos reais, com fonte. Artigos-guia: regras públicas do Enem.
+   História da Ana: fictícia (marcada como exemplo). */
+const INEP={n:'Inep, página do Enem',u:'https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem'};
+const A=[
+{id:'tema-2026',leg:'Participantes fazem a prova do Enem. Foto: Wilson Dias/Agência Brasil, CC BY 3.0 BR.',ed:'noticias',art:'SUS',t:'Tema da redação do Enem 2026 é a valorização do SUS como direito universal',d:'O tema saiu no 1º dia de prova. Veja o que a frase pedia, os repertórios que encaixavam e como seria uma proposta de intervenção completa.',dt:'9 nov',min:5,
+fonte:[{n:'CNN Brasil: tema da redação do Enem 2026 é divulgado',u:'https://www.cnnbrasil.com.br/educacao/enem-2026-tema-da-redacao-e-divulgado-veja/'},INEP],b:[
+'O tema da redação do Enem 2026 foi **"A valorização do Sistema Único de Saúde (SUS) como direito universal"**. A frase foi divulgada no início da tarde de domingo (8), no primeiro dia de prova.',
+'O tema segue o padrão dos últimos anos: um assunto social brasileiro, ligado a direitos, que pede ao participante uma proposta para resolver o problema.',
+'## O que a frase pedia',
+'O recorte tem duas palavras-chave, e o texto precisava tratar das duas:',
+'- **Valorização:** por que o SUS ainda é pouco reconhecido, mesmo atendendo a maior parte da população.\n- **Direito universal:** a saúde é para todos, sem exigir pagamento nem vínculo de emprego.',
+'Escrever só sobre "a saúde no Brasil", sem falar de valorização nem de universalidade, arrisca **fugir parcialmente do tema** (tangenciamento), o que derruba a nota da Competência 2.',
+'## Repertórios que encaixavam (e como citar)',
+'**Constituição de 1988, artigo 196.** É o repertório mais direto, porque define a saúde como direito. Exemplo de frase: *"Segundo o artigo 196 da Constituição Federal de 1988, a saúde é direito de todos e dever do Estado, o que torna o acesso universal ao SUS uma garantia, e não um favor."*',
+'**Lei 8.080, de 1990.** É a lei que organiza o SUS. Exemplo: *"A Lei 8.080/1990, que regulamenta o SUS, estabelece a universalidade como princípio, mas essa garantia ainda esbarra na falta de investimento."*',
+'**8ª Conferência Nacional de Saúde (1986).** Foi o encontro que propôs a saúde como direito e inspirou a criação do SUS. Serve bem na introdução, para contextualizar.',
+'**Vacinação.** O Programa Nacional de Imunizações, criado em 1973, oferece vacinas de graça a toda a população e é um exemplo concreto do alcance do sistema.',
+'> Repertório só vale ponto quando é **ligado ao argumento**. Citar a Constituição e não explicar o que ela tem a ver com o problema não sobe a nota.',
+'## Uma proposta de intervenção completa',
+'A Competência 5 pede cinco elementos: **agente, ação, meio, finalidade e detalhamento**. Um exemplo com os cinco:',
+'*"Cabe ao Ministério da Saúde (agente) ampliar campanhas de informação sobre os serviços do SUS (ação), por meio de propagandas na TV, nas redes sociais e nas escolas (meio), a fim de que a população reconheça o sistema como um direito de todos (finalidade). Essas campanhas devem mostrar serviços pouco conhecidos, como a vacinação gratuita e o atendimento de urgência (detalhamento)."*',
+'## E agora?',
+'A nota da redação sai com o resultado do Enem, no início do ano que vem. Até lá, o melhor treino é reescrever o seu texto com calma e ver onde ele perdeu pontos.',
+'CTA:redacao']},
+/* ============ NOTÍCIAS ============ */
+{id:'n-inscritos',leg:'Aulão para candidatos do Enem. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'noticias',art:'5 mi',t:'Enem 2026 passa de 5 milhões de inscritos; Minas soma 471,9 mil',d:'O Inep divulgou os números por estado. Em Minas, mais de 60% das inscrições são gratuitas.',dt:'13 out',min:2,
+fonte:[{n:'Inep: Minas Gerais tem 471,9 mil inscritos na edição de 2026 do Enem',u:'https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/minas-gerais-tem-472-mil-inscritos-na-edicao-de-2026-do-enem'}],b:[
+'O Enem 2026 reúne **mais de 5 milhões de inscritos** em todo o país, segundo o Inep, que publicou nesta terça-feira (13) os números de cada estado.',
+'Minas Gerais tem **471,9 mil inscritos**: 293,8 mil com inscrição gratuita e 178,1 mil pagantes. São Paulo lidera, com 851,8 mil, seguido pela Bahia, com 437,2 mil.',
+'## O que isso muda para você','Nada na sua prova, mas ajuda a entender a disputa. Mais inscritos não significa nota de corte maior automaticamente: o que define o corte é a nota de quem escolhe o mesmo curso no Sisu.',
+'> As provas serão aplicadas nos dias **8 e 15 de novembro**. Faltam poucas semanas: é hora de revisar, não de começar conteúdo novo.',
+'CTA:questoes']},
+{id:'n-idioma',leg:'Candidatos conferem as listas de sala no Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'noticias',art:'EN/ES',t:'Inscritos automáticos têm até 18 de outubro para escolher inglês ou espanhol',d:'Quem não escolher fica com inglês, sem direito a trocar. O questionário socioeconômico também libera o local de prova.',dt:'8 out',min:2,
+fonte:[{n:'Inep: Enem 2026, prazo para a escolha da língua estrangeira vai até 18 de outubro',u:'https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/enem-2026-prazo-para-a-escolha-da-lingua-estrangeira-vai-ate-18-de-outubro'}],b:[
+'Os participantes inscritos automaticamente no Enem 2026, como os concluintes do ensino médio da rede pública, têm **até 18 de outubro** para escolher a língua estrangeira da prova: inglês ou espanhol. O prazo foi publicado pelo Inep no Diário Oficial da União em 7 de outubro.',
+'## E se eu não escolher?','O Inep atribui **inglês** automaticamente, e não é possível trocar depois.',
+'## Não esqueça o questionário','Para ter acesso ao local de prova, o inscrito automático precisa **preencher o questionário socioeconômico** no sistema de inscrição. Sem ele, o local não aparece.',
+'## Como escolher a língua','Escolha a língua em que você lê com mais facilidade, não a que "parece mais fácil". São só 5 questões, mas cada acerto conta na sua nota de Linguagens.',
+'CTA:erro']},
+{id:'n-calendario',leg:'Listas de sala no portão do Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'noticias',art:'8 e 15',t:'Enem 2026: datas, horários e quando sai o gabarito',d:'Provas em 8 e 15 de novembro, portões às 12h. Veja o que já está definido no edital e o que ainda falta sair.',dt:'14 out',min:3,
+fonte:[{n:'Inep: notícias do Enem 2026',u:'https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem'},INEP],b:[
+'O calendário do Enem 2026 está no edital publicado pelo Inep. Reunimos o que já está definido e o que ainda depende de anúncio oficial.',
+'## As provas','- **8 de novembro (domingo):** Linguagens, Ciências Humanas e Redação. Das 13h30 às 19h (5h30 de prova).\n- **15 de novembro (domingo):** Ciências da Natureza e Matemática. Das 13h30 às 18h30 (5h de prova).',
+'> Os horários seguem Brasília. Os portões abrem ao meio-dia e fecham às 13h. Quem chega 13h01 não entra.',
+'## Cartão de confirmação','É nele que aparece o seu local de prova. A previsão é que saia em outubro, na Página do Participante, com acesso pela conta gov.br. O dia exato ainda não foi divulgado. Desconfie de mensagem que promete mandar o cartão por WhatsApp: o Inep não faz isso.',
+'## Gabarito e resultado','Pelo edital, o gabarito das questões objetivas sai **até o 10º dia útil** depois do segundo domingo de prova. O resultado individual costuma sair em janeiro.',
+'CTA']},
+
+/* ============ REDAÇÃO ============ */
+{id:'competencias',leg:'Participantes fazem a prova do Enem. Foto: Wilson Dias/Agência Brasil, CC BY 3.0 BR.',ed:'redacao',art:'C1–5',t:'As 5 competências da redação do Enem, explicadas',d:'Cada competência vale até 200 pontos. Entender o que o corretor procura em cada uma é o caminho mais curto para subir a nota.',dt:'12 out',min:8,fonte:[INEP],b:[
+'Cada redação do Enem é lida por **dois corretores**, que trabalham sem ver a nota um do outro. Cada um avalia cinco competências, com notas de 0 a 200 em seis degraus: 0, 40, 80, 120, 160 e 200. A nota final é a média das duas correções.',
+'Se os dois discordarem muito (mais de 100 pontos na nota total ou mais de 80 em uma competência), um terceiro corretor entra em cena. Por isso, o texto precisa ser claro para qualquer leitor, não só para quem pensa como você.',
+'## Competência 1: norma culta','Avalia a escrita formal: ortografia, acentuação, pontuação, concordância, regência e escolha de palavras. Não é preciso escrever difícil. É preciso escrever certo.',
+'- **Desvios que mais aparecem:** crase, concordância verbal ("existe muitos problemas"), vírgula separando sujeito e verbo, "onde" usado para algo que não é lugar.\n- **Como treinar:** releia cada redação só caçando esses quatro erros. Depois de algumas semanas, você para de cometê-los no automático.',
+'## Competência 2: compreensão da proposta','Avalia se você entendeu o tema e escreveu um texto **dissertativo-argumentativo**, com repertório de outras áreas: um dado, uma lei, um livro, um fato histórico.',
+'> Fugir totalmente do tema zera a redação inteira, não só esta competência. Tangenciar o tema (falar do assunto geral sem focar no recorte pedido) derruba a nota nas competências 2, 3 e 5.',
+'CTA:redacao',
+'## Competência 3: argumentação','Avalia se você defende um ponto de vista claro e organiza as informações para sustentá-lo. Cada parágrafo de desenvolvimento precisa de uma ideia central e de uma prova para ela: um dado, um exemplo, um repertório. Argumento sem prova vira opinião, e opinião solta não pontua.',
+'## Competência 4: coesão','Avalia as ligações entre frases e parágrafos: conectivos, pronomes, retomadas. Variar os conectivos e começar cada parágrafo com um deles ("além disso", "nesse sentido", "dessa forma", "portanto") é meio caminho andado. Repetir "também" e "com isso" o texto inteiro custa pontos.',
+'## Competência 5: proposta de intervenção','Exige uma solução para o problema, com **agente, ação, meio, finalidade e detalhamento**. É a competência que mais rápido sobe com treino, porque segue uma estrutura fixa. Proposta que desrespeita os direitos humanos recebe zero aqui.',
+'## Como treinar','Escreva uma redação por semana e revise pensando em uma competência por vez. Em quatro semanas, você enxerga com clareza onde está perdendo pontos e para de errar sempre no mesmo lugar.',
+'CTA:personaliza']},
+{id:'intervencao',ed:'redacao',art:'5 em 1',t:'Proposta de intervenção: os 5 elementos, com exemplos',d:'Agente, ação, meio, finalidade e detalhamento. Veja como montar uma proposta completa em um parágrafo.',dt:'2 out',min:7,fonte:[INEP],b:[
+'A proposta de intervenção é a competência 5 da redação. É a que sobe mais rápido com treino, porque segue uma estrutura clara. Cada elemento que falta derruba a nota em um degrau, ou 40 pontos.',
+'## Os cinco elementos','- **Agente:** quem vai agir. Prefira um agente específico: "o Ministério da Educação" é melhor que "o governo".\n- **Ação:** o que será feito.\n- **Meio ou modo:** como será feito ("por meio de", "mediante").\n- **Finalidade:** para quê ("a fim de", "com o objetivo de").\n- **Detalhamento:** uma informação a mais sobre qualquer um dos elementos.',
+'## Exemplo montado','Tema de 2025: "Perspectivas acerca do envelhecimento na sociedade brasileira".',
+'> Cabe ao **Ministério da Saúde** (agente) **ampliar programas de cuidado à pessoa idosa** (ação), **por meio de equipes de saúde da família treinadas em geriatria** (meio), **a fim de garantir um envelhecimento com autonomia** (finalidade). Essas equipes devem priorizar **idosos que moram sozinhos** (detalhamento).',
+'CTA:redacao',
+'## Agentes que funcionam em quase todo tema','- **Ministério da Educação:** escolas, campanhas pedagógicas, formação de professores.\n- **Ministério da Saúde:** atendimento, prevenção, saúde mental.\n- **Mídia:** campanhas de conscientização, com detalhamento do público.\n- **Organizações da sociedade civil:** projetos locais, parcerias.\n- **Poder Legislativo:** leis e fiscalização.',
+'## Os erros mais comuns','- "O governo deve conscientizar a população": agente vago, sem meio e sem finalidade.\n- Proposta solta, sem ligação com os problemas discutidos no texto.\n- Duas propostas pela metade em vez de uma completa.\n- Detalhamento esquecido: é o elemento que mais falta nas redações nota 160.',
+'## Checklist antes de passar a limpo','Responda cinco perguntas na ordem: quem? o quê? como? para quê? e mais um detalhe. Se uma delas não tem resposta na sua conclusão, a nota não chega a 200.']},
+{id:'temas',leg:'Candidatos chegam para o Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'redacao',art:'2015 →',t:'Todos os temas de redação do Enem de 2015 a 2025',d:'Onze anos de temas mostram um padrão claro: problemas sociais brasileiros e grupos que ficam invisíveis.',dt:'24 set',min:7,fonte:[INEP],b:[
+'Ninguém adivinha o tema do Enem. Mas a lista dos últimos anos mostra o que a banca valoriza, e isso ajuda a montar um repertório que serve para quase tudo.',
+'## A lista','- **2025:** Perspectivas acerca do envelhecimento na sociedade brasileira.\n- **2024:** Desafios para a valorização da herança africana no Brasil.\n- **2023:** Desafios para o enfrentamento da invisibilidade do trabalho de cuidado realizado pela mulher no Brasil.\n- **2022:** Desafios para a valorização de comunidades e povos tradicionais no Brasil.\n- **2021:** Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil.\n- **2020:** O estigma associado às doenças mentais na sociedade brasileira.\n- **2019:** Democratização do acesso ao cinema no Brasil.\n- **2018:** Manipulação do comportamento do usuário pelo controle de dados na internet.\n- **2017:** Desafios para a formação educacional de surdos no Brasil.\n- **2016:** Caminhos para combater a intolerância religiosa no Brasil.\n- **2015:** A persistência da violência contra a mulher na sociedade brasileira.',
+'## O padrão','Quase todos os temas tratam de um grupo ou de um direito que a sociedade deixa de enxergar: mulheres, povos tradicionais, pessoas sem registro, pessoas com doença mental, idosos. A palavra "invisibilidade" aparece em dois enunciados. A maioria pede "desafios" ou "caminhos", ou seja, problema e solução.',
+'CTA:redacao',
+'## Como usar isso no seu treino','Escolha cinco temas da lista e escreva uma redação para cada um, como se fosse a prova. Depois, compare: os repertórios que você usou servem para outros temas? Os melhores servem para três ou quatro de uma vez.',
+'> Em 2025, a palavra "perspectivas" pegou muita gente de surpresa, porque os três anos anteriores começavam com "desafios". Leia o tema inteiro, palavra por palavra, antes de planejar.',
+'CTA:preco']},
+{id:'zera',ed:'redacao',art:'0',t:'O que zera a redação do Enem (e como evitar)',d:'Fuga ao tema, texto curto demais e outros motivos que anulam a redação inteira, com o jeito de nunca cair neles.',dt:'18 set',min:6,fonte:[INEP],b:[
+'Zerar a redação derruba a média de qualquer candidato, porque ela pesa tanto quanto uma área inteira de questões. A boa notícia: quase todos os motivos são evitáveis com atenção e treino.',
+'## Os motivos de nota zero','- Fuga total ao tema.\n- Não seguir o tipo dissertativo-argumentativo (escrever um poema ou uma narrativa, por exemplo).\n- Texto com até 7 linhas.\n- Trecho propositalmente desconectado do tema.\n- Desenhos, palavras ofensivas ou outras formas de anular a prova.\n- Folha de redação em branco.\n- Texto escrito predominantemente em língua estrangeira.',
+'> Copiar os textos de apoio não zera sozinho, mas as linhas copiadas são desconsideradas. Se sobrar pouco texto seu, a redação pode cair no limite das 7 linhas.',
+'## Fuga x tangenciamento','Fugir do tema é escrever sobre outro assunto, e zera. Tangenciar é escrever sobre o assunto geral sem focar no recorte do enunciado, e não zera, mas derruba a nota. Exemplo: se o tema fala de "acesso ao cinema", escrever só sobre "a importância da cultura" é tangenciar.',
+'CTA:redacao',
+'## Como se proteger','- Leia a proposta duas vezes e sublinhe as palavras-chave.\n- Antes de passar a limpo, confira se cada parágrafo responde a elas.\n- Reserve pelo menos uma hora para a redação no primeiro dia.\n- Passe a limpo com caneta preta, letra legível e sem assinar a folha.']},
+{id:'estrutura',ed:'redacao',art:'4 §',t:'Estrutura da redação do Enem, parágrafo por parágrafo',d:'Introdução, dois desenvolvimentos e conclusão. O que vai em cada parte e quantas linhas usar.',dt:'28 ago',min:7,b:[
+'A redação do Enem tem até 30 linhas. A estrutura mais segura usa quatro parágrafos, com cerca de 7 linhas cada. Não é a única possível, mas é a que deixa menos espaço para erro.',
+'## Introdução (cerca de 6 linhas)','Apresente o tema com um repertório (um dado, uma lei, um autor) e termine com a sua tese: a frase que diz o que você vai defender. Na tese, já anuncie os dois argumentos que vêm a seguir.',
+'## Desenvolvimento 1 e 2 (cerca de 8 linhas cada)','Cada parágrafo traz **um argumento**. Comece com um conectivo e a ideia central, prove com um repertório ou um exemplo, explique a relação com o tema e feche a ideia.',
+'CTA:redacao',
+'## Conclusão (cerca de 7 linhas)','Retome a tese em uma frase e apresente a proposta de intervenção completa: agente, ação, meio, finalidade e detalhamento. Não traga argumento novo na conclusão.',
+'> Truque de revisão: leia só a primeira frase de cada parágrafo. Se elas, juntas, formarem um resumo do texto, a estrutura está boa.',
+'## Quanto tempo gastar','No dia da prova, planeje 20 minutos para o rascunho, 30 para passar a limpo e 10 para revisar. Treine com cronômetro em casa para chegar à prova com esse ritmo no corpo.']},
+
+/* ============ MATÉRIAS ============ */
+{id:'matematica',ed:'materias',leg:'Aulão de Matemática para candidatos do Enem. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',art:'%',t:'O que mais cai em Matemática no Enem',d:'Porcentagem, proporção, estatística e leitura de gráficos aparecem todo ano. Comece por eles.',dt:'9 set',min:7,b:[
+'A Matemática do Enem é menos fórmula e mais leitura. A maioria das 45 questões traz uma situação do dia a dia e pede para você interpretar dados e fazer contas simples com atenção.',
+'## Os conteúdos mais frequentes','- **Porcentagem, razão e proporção:** desconto, aumento, escala de mapa, receita.\n- **Estatística:** média, moda e mediana.\n- **Leitura de gráficos e tabelas.**\n- **Geometria plana e espacial:** área, perímetro e volume.\n- **Funções:** principalmente de 1º e 2º grau, ligadas a situações reais.',
+'CTA:questoes',
+'## Por onde começar','Se o tempo é curto, comece por porcentagem e estatística. São rápidas de aprender e aparecem em muitas questões. Depois, geometria. Funções e análise combinatória ficam para o fim.',
+'## Como estudar cada conteúdo','Veja a teoria uma vez e vá direto para questões de provas anteriores. Na Matemática do Enem, quem resolve muita questão reconhece os padrões: o mesmo tipo de problema volta com outra história.',
+'> Na TRI, garantir as questões fáceis de Matemática vale muito. Elas ficam espalhadas pela prova, não só no começo. Passe por todas antes de gastar tempo nas difíceis.',
+'CTA:tri']},
+{id:'natureza',ed:'materias',art:'H₂O',t:'Como estudar Ciências da Natureza com pouco tempo',d:'Física, Química e Biologia em um plano que cabe na sua semana, priorizando o que se repete.',dt:'3 set',min:7,b:[
+'Ciências da Natureza assusta pela quantidade de conteúdo: são três matérias em 45 questões. O segredo é não estudar tudo com o mesmo peso.',
+'## Biologia','É a matéria mais presente da área. Priorize **ecologia** (cadeias alimentares, ciclos, impactos ambientais), **genética** e **fisiologia humana**. As questões costumam trazer textos sobre saúde e meio ambiente.',
+'## Química','Foque em **estequiometria**, **química ambiental** (poluição, chuva ácida, tratamento de água) e **funções orgânicas**. Muitas questões ligam a química ao cotidiano: alimentos, combustíveis, remédios.',
+'CTA:personaliza',
+'## Física','Os campeões são **eletricidade** (circuitos, consumo de energia, conta de luz), **mecânica** (movimento, força, energia) e **ondas**. Muitas questões de física pedem só uma conta simples depois de uma leitura atenta.',
+'## Um plano semanal','- Segunda e quarta: Biologia.\n- Terça: Química.\n- Quinta: Física.\n- Sexta: questões misturadas das três matérias, com tempo marcado.',
+'> Cada hora de teoria deve vir com pelo menos meia hora de questões reais de provas anteriores. É ali que você aprende o jeito Enem de perguntar: muito texto, contexto do cotidiano e pouca conta.']},
+{id:'linguagens',leg:'Biblioteca Pública Estadual de Minas Gerais, em Belo Horizonte. Foto: Tet, Wikimedia Commons, CC0.',ed:'materias',art:'Aa',t:'Linguagens: como ler mais rápido e errar menos',d:'A prova de Linguagens é uma prova de leitura. Técnicas para ganhar tempo sem perder precisão, e os gêneros que mais caem.',dt:'21 ago',min:7,b:[
+'Linguagens cobra interpretação acima de tudo. São 45 questões no primeiro dia, junto com Humanas e a redação. Ganhar velocidade de leitura aqui libera tempo para o texto mais importante da prova.',
+'## O que cai','- **Interpretação de textos variados:** reportagem, crônica, propaganda, tirinha, poema, letra de música.\n- **Literatura:** movimentos literários lidos a partir de trechos, não de decoreba de datas.\n- **Gramática aplicada:** função da linguagem, variação linguística, efeito de sentido de uma palavra.\n- **Artes e Educação Física:** cultura corporal, obras e manifestações artísticas.\n- **Língua estrangeira:** 5 questões de inglês ou espanhol.',
+'## Três técnicas de leitura','- **Leia o comando primeiro.** Saber o que a questão pede direciona a leitura do texto.\n- **Ache a ideia central de cada parágrafo**, não cada palavra.\n- **Desconfie das alternativas que dizem mais do que o texto diz.** No Enem, a resposta certa é a que o texto sustenta.',
+'CTA:questoes',
+'## Variação linguística: o tema queridinho','O Enem gosta de questões que valorizam as diferentes formas de falar o português: regional, informal, de grupos sociais. A resposta quase nunca trata uma variedade como "errada". Fique atento a isso.',
+'## Como treinar','Faça blocos de 10 questões de Linguagens com 30 minutos de cronômetro. Corrija na hora e anote o motivo de cada erro: leitura apressada, vocabulário ou conteúdo. Depois de algumas semanas, o padrão dos seus erros aparece.',
+'> Treinar com questões oficiais de provas anteriores é o jeito mais rápido de entender o estilo da banca. Os textos mudam, mas o jeito de perguntar se repete.',
+'CTA:erro']},
+
+/* ============ ESTUDO ============ */
+{id:'dia-da-prova',leg:'Candidata no dia do Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'estudo',art:'D-1',t:'O que levar e o que é proibido no dia do Enem',d:'Documento com foto, caneta preta de corpo transparente e o checklist completo para não ter surpresa no portão.',dt:'13 out',min:6,fonte:[INEP],b:[
+'Separe tudo na véspera. A correria da manhã é quando as coisas ficam para trás.',
+'## Leve','- **Documento oficial com foto**, original. Documentos digitais aceitos pelo edital, como a CNH digital, também valem.\n- **Caneta esferográfica de tinta preta, de corpo transparente.** Leve duas.\n- Água e lanche leve.\n- Cartão de confirmação impresso: não é obrigatório, mas ajuda a achar a sala.',
+'## Horários','Os portões abrem às 12h e fecham às 13h, no horário de Brasília. A prova começa às 13h30. Planeje chegar antes do meio-dia: trânsito e fila no portão são imprevisíveis.',
+'## Deixe guardado','Celular e qualquer eletrônico vão **desligados** no envelope porta-objetos entregue na sala. Se o celular tocar ou vibrar, você é eliminado.',
+'CTA:tri',
+'## Durante a prova','- Você só pode sair depois de duas horas do início.\n- Só pode levar o caderno de questões nos últimos 30 minutos.\n- Marque o cartão-resposta com calma: questão em branco conta como erro.',
+'> Na noite anterior, nada de estudo pesado. Separe o material, coma algo leve e durma cedo. O cansaço custa mais pontos que uma revisão de última hora rende.']},
+{id:'revisao',ed:'estudo',leg:'Aulão de revisão para o Enem. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',art:'14d',t:'Como revisar nas últimas duas semanas antes do Enem',d:'Um plano dia a dia para revisar sem se esgotar: questões, redação e descanso na medida.',dt:'6 out',min:7,b:[
+'Nas últimas duas semanas, aprender conteúdo novo rende pouco. O que rende é revisar o que mais cai, consertar os erros que você repete e treinar o ritmo da prova.',
+'## O plano','- **Dias 1 a 10:** uma área por dia, com questões de provas anteriores.\n- **A cada 3 dias:** uma redação completa, com tempo marcado.\n- **Dias 11 a 13:** simulados curtos e revisão dos erros.\n- **Véspera:** nada de estudo pesado. Separe documento e caneta e durma cedo.',
+'CTA:personaliza',
+'## O caderno de erros','Anote cada erro com o motivo: falta de conteúdo, distração ou tempo. Os erros por distração se resolvem com atenção; os de conteúdo mostram exatamente o que revisar nos dias que faltam.',
+'## Cuide do corpo','Durma pelo menos sete horas, mantenha os horários de refeição e faça pausas a cada hora de estudo. Nas duas semanas finais, descanso é parte da preparação.',
+'> Na véspera, releia só o caderno de erros e o checklist do dia da prova. Mais nada.',
+'CTA:preco']},
+{id:'tempo-prova',leg:'Candidata e a mãe no portão do Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'estudo',art:'3 min',t:'Quanto tempo gastar em cada questão do Enem',d:'São 90 questões por dia. A conta mostra quanto tempo sobra para a redação e quando pular uma questão.',dt:'30 set',min:6,b:[
+'No primeiro dia são 90 questões e a redação em 5h30. No segundo, 90 questões em 5h. Dá cerca de **3 minutos por questão**, e menos que isso no primeiro dia, por causa da redação.',
+'## Um plano para o 1º dia','- Quem se perde no tempo deve começar pela redação: rascunho e texto final em até 1h20.\n- Sobram cerca de 4h para 90 questões: 2min40s por questão.\n- Últimos 15 minutos: passar as respostas para o cartão.',
+'## Um plano para o 2º dia','Comece pela área em que você é mais forte. Garantir pontos cedo dá confiança e tempo para as questões longas de Matemática no fim.',
+'CTA:questoes',
+'## Quando pular','Travou em uma questão por mais de 4 minutos? Marque e siga. Na TRI, deixar uma difícil para depois e garantir três fáceis vale mais.',
+'> Treine em casa com blocos cronometrados de 10 questões em 30 minutos. O ritmo da prova se aprende antes da prova.']},
+{id:'tri',leg:'Candidato no dia do Enem 2017. Foto: Agência Brasil, Wikimedia Commons, CC BY 2.0.',ed:'estudo',art:'TRI',t:'Como funciona a nota TRI do Enem (sem fórmula)',d:'Por que duas pessoas com o mesmo número de acertos tiram notas diferentes, explicado sem matemática.',dt:'15 set',min:6,b:[
+'A Teoria de Resposta ao Item, a TRI, olha **quais** questões você acertou, não só **quantas**. Cada questão tem um nível de dificuldade, e o sistema confere se as suas respostas formam um padrão coerente.',
+'## O exemplo clássico','Dois alunos acertam 30 questões. O primeiro acertou as fáceis e algumas médias. O segundo errou fáceis e acertou difíceis. O primeiro tende a tirar nota maior, porque o padrão dele é coerente. O do segundo parece chute.',
+'## Por que a nota não vai de 0 a 1000','Na TRI, cada área tem a sua própria escala, calculada a partir dos participantes. Por isso, acertar todas as questões não dá exatamente 1000, e errar todas não dá zero. Comparar notas de áreas diferentes exige cuidado.',
+'CTA:tri',
+'## O que muda no seu estudo','- Garanta as questões fáceis e médias: elas dão base à sua nota.\n- Revise os conteúdos básicos antes dos avançados.\n- Chutar no fim vale a pena, porque questão em branco é erro. Mas chute com estratégia, eliminando alternativas.',
+'> Acompanhar a sua nota estimada por TRI ao longo dos meses mostra se o estudo está funcionando de verdade, muito mais que contar acertos.']},
+
+/* ============ CARREIRAS ============ */
+{id:'sisu-cotas',leg:'Estudantes na Universidade de Brasília. Foto: UnB, Wikimedia Commons, CC BY 2.0.',ed:'carreiras',art:'Sisu',t:'Sisu: ampla concorrência ou cotas, como escolher a sua',d:'Desde a atualização da Lei de Cotas, o cotista disputa primeiro a ampla concorrência. Entenda o que isso muda.',dt:'25 set',min:7,b:[
+'No Sisu, as vagas de cada curso são divididas por modalidade: ampla concorrência e as reservas da Lei de Cotas, para estudantes de escola pública, com recortes de renda, cor ou raça, quilombolas e pessoas com deficiência.',
+'## O que mudou com a lei de 2023','A atualização da Lei de Cotas (Lei 14.723/2023) fez o candidato cotista **concorrer primeiro na ampla concorrência**. Só se não passar por ali é que ele disputa a vaga reservada. Também reduziu o limite de renda para até 1 salário mínimo por pessoa da família.',
+'## Quem tem direito','A base é ter cursado todo o ensino médio em escola pública. A partir daí, há recortes por renda, por autodeclaração de cor ou raça, para quilombolas e para pessoas com deficiência. Cada universidade confere os documentos na matrícula.',
+'CTA:tri',
+'## Como decidir','Confira se você tem direito a alguma reserva e compare as notas de corte de edições anteriores em cada modalidade. Durante a inscrição, o Sisu mostra uma nota de corte parcial atualizada a cada dia.',
+'> O Sisu de 2027 deve abrir em janeiro, mas o MEC ainda não publicou o calendário. Acompanhe o portal oficial do Sisu.']},
+{id:'nota-de-corte',leg:'Entrada da UFMG, em Belo Horizonte. Foto: Galabel Morea, Wikimedia Commons, CC BY-SA 4.0.',ed:'carreiras',art:'≥',t:'Nota de corte: o que é e como usar para escolher o curso',d:'A nota de corte não é fixa. Entenda como ela se forma e como usar o histórico a seu favor.',dt:'11 set',min:6,b:[
+'A nota de corte é a menor nota entre os selecionados em um curso, numa modalidade. Ela muda a cada edição e também durante os dias de inscrição, conforme os candidatos mudam de opção.',
+'## Use o histórico','Olhe as notas de corte dos últimos anos para ter uma faixa, não um número exato. Mire a faixa e calcule a nota que você precisa em cada área.',
+'## Atenção aos pesos','Cada curso pode dar pesos diferentes para as áreas. Em Medicina, Natureza costuma pesar mais. Em Direito, a redação e Humanas. Saber o peso mostra onde vale mais a pena estudar.',
+'CTA:tri',
+'## Monte a sua meta','- Escolha três cursos possíveis.\n- Anote a faixa de nota de corte de cada um.\n- Compare com a sua nota estimada hoje.\n- Distribua o estudo para fechar a diferença nas áreas de maior peso.',
+'CTA:personaliza']},
+{id:'escolher-curso',ed:'carreiras',art:'?',t:'Como escolher o curso quando você ainda não sabe o que quer',d:'Um roteiro de quatro perguntas para sair da dúvida e montar uma lista curta de cursos.',dt:'26 ago',min:6,b:[
+'Não saber o que fazer é comum. O erro é deixar a decisão para a última hora do Sisu, quando a ansiedade escolhe por você.',
+'## Quatro perguntas','- De quais matérias eu gosto de verdade?\n- Como quero que seja o meu dia de trabalho: com pessoas, com números, com ideias, ao ar livre?\n- Que cursos levam a isso?\n- Qual nota cada um exige?',
+'## Pesquise além do nome','Leia a grade curricular dos cursos que chamaram a sua atenção. Muitos estudantes se surpreendem: o curso que parecia perfeito tem matérias de que não gostam, e outro que nem estava na lista combina mais.',
+'CTA:personaliza',
+'> Converse com quem já faz o curso. Dez minutos com um estudante real valem mais que uma hora de vídeo.',
+'## E se eu errar?','Trocar de curso é possível e acontece muito. Escolher com informação diminui a chance de recomeçar, mas não precisa ser uma decisão para a vida inteira.']},
+
+/* ============ REPERTÓRIO ============ */
+{id:'agente-secreto',ed:'repertorio',cor:'#e9a43f',leg:'Cartaz oficial do filme. Divulgação: Vitrine Filmes.',art:'1977',t:'Como citar O Agente Secreto na redação do Enem',d:'O filme de Kleber Mendonça Filho é o repertório do momento. Veja a fórmula para citar sem resumir o enredo, com frases prontas para adaptar.',dt:'15 out',min:6,
+fonte:[{n:'CNN Brasil: O Agente Secreto, prêmios conquistados',u:'https://www.cnnbrasil.com.br/entretenimento/o-agente-secreto-veja-os-premios-conquistados-e-a-quais-ainda-concorre/'},{n:'Agência Brasil: Oscar 2026, O Agente Secreto encerra campanha sem prêmios',u:'https://agenciabrasil.ebc.com.br/cultura/noticia/2026-03/oscar-2026-o-agente-secreto-encerra-campanha-sem-premios'},{n:'Foto de Wagner Moura em Cannes: Kacy Bao, Wikimedia Commons, licença CC BY-SA 4.0',u:'https://commons.wikimedia.org/wiki/File:Alice_Carvalho,_Wagner_Moura,_and_Emilie_Lesclaux_at_2025_Cannes_Red_Carpet_for_O_Agente_Secreto_1.jpg'}],b:[
+'Todo ano aparece um repertório "da moda", e todo ano muita gente perde ponto com ele. O motivo é sempre o mesmo: o aluno conta o filme em vez de usar o filme. **O Agente Secreto** é ótimo repertório, desde que citado do jeito certo.',
+'## O que você precisa saber do filme','Dirigido por **Kleber Mendonça Filho** e estrelado por **Wagner Moura**, o filme se passa no **Recife de 1977**, durante a ditadura militar. Ganhou melhor direção e melhor ator em **Cannes 2025**, venceu dois **Globos de Ouro** e recebeu **quatro indicações ao Oscar 2026**, incluindo melhor filme.',
+'!img/wm.jpg|Wagner Moura (ao centro) com Alice Carvalho e a produtora Emilie Lesclaux em Cannes, 2025. Foto: Kacy Bao, CC BY-SA 4.0.',
+'## A fórmula da citação','- **Obra + ano + autor:** "o filme O Agente Secreto (2025), de Kleber Mendonça Filho".\n- **A ideia, em uma frase:** o que o filme mostra que interessa ao seu tema.\n- **A ponte:** por que isso prova o seu argumento.',
+'> Duas linhas sobre o filme bastam. O corretor quer ver o repertório trabalhando a favor da tese, não um resumo do enredo.',
+'## Frases prontas para adaptar','> **Tema sobre memória e democracia:** "O filme O Agente Secreto (2025), de Kleber Mendonça Filho, retrata o Recife de 1977 como um lugar em que o medo da repressão moldava a vida comum. Ao trazer esse passado de volta, a obra lembra que preservar a memória do autoritarismo é condição para proteger a democracia."',
+'> **Tema sobre cultura e acesso ao cinema:** "O reconhecimento internacional de O Agente Secreto (2025), indicado a quatro Oscars, comprova a força do cinema brasileiro. Ainda assim, grande parte dos municípios do país não tem uma sala de cinema, o que mantém essa produção distante de quem mais deveria vê-la."',
+'CTA',
+'## Os três erros que tiram ponto','- Resumir o filme por um parágrafo inteiro.\n- Citar sem nome, ano ou diretor ("um filme recente mostrou...").\n- Encaixar o filme num tema com o qual ele não conversa só porque está na moda.','CTA:preco']},
+{id:'ainda-estou-aqui',ed:'repertorio',cor:'#9cc3df',leg:'Cartaz oficial do filme. Divulgação.',art:'2025',t:'Como citar Ainda Estou Aqui na redação do Enem',d:'O primeiro Oscar do Brasil rende repertório sobre memória, família e direitos humanos. A citação certa cabe em duas linhas.',dt:'10 out',min:5,b:[
+'**Ainda Estou Aqui** (2024), de Walter Salles, conta a história de **Eunice Paiva**, vivida por Fernanda Torres. O marido dela, o ex-deputado Rubens Paiva, foi levado por agentes da ditadura em 1971 e nunca mais voltou. Em 2025, o filme deu ao Brasil o seu **primeiro Oscar de melhor filme internacional**.',
+'## Como citar','Nome da obra, ano e diretor, mais uma frase sobre o que ela mostra. Se quiser reforçar, cite o livro de Marcelo Rubens Paiva, filho de Eunice, em que o filme se baseia.',
+'## Frases prontas para adaptar','> **Tema sobre memória e direitos humanos:** "O filme Ainda Estou Aqui (2024), de Walter Salles, mostra a luta de Eunice Paiva para obter respostas sobre o desaparecimento do marido durante a ditadura. A obra evidencia que o direito à verdade é parte essencial da reparação às vítimas da violência de Estado."',
+'> **Tema sobre o papel da mulher:** "Em Ainda Estou Aqui (2024), Eunice Paiva assume sozinha o sustento e a reconstrução da família, papel que milhões de brasileiras exercem sem reconhecimento."',
+'CTA',
+'> Dupla forte: Ainda Estou Aqui num parágrafo e O Agente Secreto no outro. Dois filmes premiados sobre o mesmo período mostram repertório amplo e atual.']},
+{id:'constituicao',ed:'repertorio',leg:'Promulgação da Constituição, 5 de outubro de 1988. Foto: Agência Brasil, CC BY 3.0 BR.',art:'1988',t:'Como citar a Constituição na redação do Enem (sem cair no clichê)',d:'A Constituição virou o repertório mais usado e mais mal usado do Enem. O problema nunca foi a lei: foi o jeito de citar.',dt:'1 out',min:6,
+fonte:[{n:'Constituição da República Federativa do Brasil de 1988 (Planalto)',u:'https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm'},{n:'Foto da promulgação: Agência Brasil, Wikimedia Commons, licença CC BY 3.0 BR',u:'https://commons.wikimedia.org/wiki/File:Promulga%C3%A7%C3%A3o-Constitui%C3%A7%C3%A3o-1988.jpg'}],b:[
+'Os corretores leem milhares de redações que começam com "A Constituição Federal de 1988 garante...". Muitas param aí: a lei aparece, mas não faz nada no texto. É por isso que o repertório ganhou fama de clichê. Citada do jeito certo, ela continua forte.',
+'## O erro mais comum','Citar a Constituição de forma vaga ("a Constituição garante direitos a todos") e seguir em frente. Isso não prova nada e não mostra conhecimento.',
+'## A citação correta em três passos','- **Seja específico:** diga o artigo e o que ele garante.\n- **Mostre o contraste:** aponte a distância entre a lei e a realidade.\n- **Ligue à tese:** explique o que esse contraste revela sobre o problema.',
+'## Frases prontas para adaptar','> **Tema sobre saúde:** "O artigo 196 da Constituição Federal de 1988 estabelece que a saúde é direito de todos e dever do Estado. Na prática, porém, a demora no atendimento em muitas regiões mostra que esse direito ainda não chega a todos da mesma forma."',
+'> **Tema sobre cultura ou educação:** "Embora o artigo 215 da Constituição assegure a todos o exercício dos direitos culturais, o acesso a teatros, cinemas e bibliotecas continua concentrado nas grandes cidades."',
+'CTA',
+'## Os artigos que mais servem','- **Art. 5º:** igualdade de todos perante a lei.\n- **Art. 6º:** direitos sociais, como educação, saúde, alimentação, trabalho, moradia e lazer.\n- **Art. 196:** saúde como direito de todos e dever do Estado.\n- **Art. 205:** educação como direito de todos e dever do Estado e da família.\n- **Art. 215:** direitos culturais.',
+'> Use a Constituição em um parágrafo só e varie no outro com um repertório de outra área: um filme, um dado do IBGE, um pensador. Repertório variado pesa a favor na competência 2.']},
+
+/* ============ HISTÓRIAS ============ */
+{id:'historia-mateus',ed:'historias',leg:'Reitoria da Universidade Federal do Ceará, em Fortaleza. Foto: Nakinn, Wikimedia Commons, CC BY-SA 4.0.',art:'4h/dia',t:'Quatro horas por dia, todos os dias: a rotina do filho de diarista que passou em Medicina na UFC',d:'Mateus, 17 anos, estudante de escola pública na periferia de Fortaleza, transformou constância em método e conquistou uma das vagas mais disputadas do Ceará.',dt:'17 abr',min:5,
+fonte:[{n:'Diário do Nordeste: Filho de motorista e diarista, aluno de escola pública do Bom Jardim é aprovado em Medicina na UFC (reportagem de Diego Barbosa, 14/04/2026)',u:'https://diariodonordeste.verdesmares.com.br/ceara/filho-de-motorista-e-diarista-aluno-de-escola-publica-do-bom-jardim-e-aprovado-em-medicina-na-ufc-1.3756412'},{n:'Só Notícia Boa: Filho de diarista é aprovado em Medicina na federal (Rinaldo de Oliveira, 16/04/2026)',u:'https://www.sonoticiaboa.com.br/2026/04/16/filho-diarista-motorista-aprovado-medicina-federal-largou-namorada-celular'},{n:'Foto da reitoria da UFC: Nakinn, Wikimedia Commons, licença CC BY-SA 4.0',u:'https://commons.wikimedia.org/wiki/File:Universidade_Federal_do_Cear%C3%A1.png'}],b:[
+'Mateus Rodrigues de Freitas tem 17 anos, é filho de um motorista e de uma diarista e estudou a vida toda em escola pública, a Dona Júlia Alves Pessoa, no Bom Jardim, bairro da periferia de Fortaleza. Em 2026, foi aprovado em **Medicina na Universidade Federal do Ceará (UFC)**. Segundo a coordenação da escola, é o primeiro aluno de lá a chegar a esse curso.',
+'## A decisão','A virada aconteceu no fim do 2º ano do ensino médio, em dezembro de 2024. Foi quando Mateus decidiu que o Enem seria a prioridade do ano seguinte e montou um plano para isso.',
+'## O método','O plano dele tinha três regras simples, e ele seguiu as três até o fim.',
+'- **Horário fixo:** escola de manhã e cerca de **quatro horas de estudo em casa toda tarde**, mais estudo nos fins de semana.\n- **Pausa programada:** tempo reservado para descansar e se divertir, para aguentar o ritmo o ano inteiro.\n- **Ambiente protegido:** o celular ficava em outro cômodo durante o estudo, e ele saiu das redes sociais.',
+'> O segredo, segundo ele, foi a constância. Quatro horas todos os dias rendem mais do que maratonas de vez em quando seguidas de semanas paradas.',
+'## As renúncias','O ano exigiu escolhas. Mateus passou a sair menos e terminou um namoro para manter o foco. Mesmo assim, seguiu ajudando nas tarefas de casa.',
+'## O resultado','Antes da UFC, ele já tinha passado para a segunda fase do vestibular da Uece e ganhado uma bolsa integral em um colégio particular de Fortaleza. O resultado do Enem chegou antes que precisasse escolher. As aulas de Medicina começam no segundo semestre de 2026.',
+'Ao Diário do Nordeste, Mateus contou que, antes de se preparar, não tinha noção da própria capacidade. Hoje, quer ser um bom médico e servir de exemplo para outros jovens da periferia.',
+'## O que copiar da rotina dele','- Defina um horário de estudo e trate como compromisso.\n- Planeje o descanso junto com o estudo.\n- Tire o celular do alcance enquanto estuda.\n- Comece cedo: ele teve quase um ano inteiro de preparação.',
+'CTA:personaliza','CTA:preco']}
+
+];
+const FOTO={'tema-2026':'g7.jpg','n-inscritos':'e3.jpg','n-idioma':'g6.jpg','n-calendario':'g5.jpg','competencias':'g7.jpg','intervencao':11,'temas':'g1.jpg','zera':2,'estrutura':11,'matematica':'e1.jpg','natureza':1,'linguagens':'g8.jpg','dia-da-prova':'g2.jpg','revisao':'e4.jpg','tempo-prova':'g3.jpg','tri':'g4.jpg','sisu-cotas':'g10.jpg','nota-de-corte':'g9.jpg','escolher-curso':5,'agente-secreto':'cartaz.png','ainda-estou-aqui':'cartaz2.jpg','constituicao':'c88.jpg','historia-mateus':'ufc.jpg'};
