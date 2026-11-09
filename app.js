@@ -72,7 +72,7 @@ function home(){
  <div class="wrap"><div class="in grid">
   <div>
    <h1 class="syne">${['O','Enem','inteiro,','sem'].map((w,i)=>`<span class="w" style="animation-delay:${i*.09}s">${w}</span>`).join(' ')} <em class="w" style="animation-delay:.36s">enrolação</em><span class="w" style="animation-delay:.45s">.</span></h1>
-   <p class="lead">Notícias, dicas e, principalmente, muita ajuda para quem vai fazer o Enem. Todo dia.</p>
+   <p class="lead">Do edital à redação nota mil: o Enem explicado em linguagem simples, todo dia.</p>
    <div class="acoes"><a class="btn lg" href="#/corretor">Corrigir minha redação</a><a class="lnk" href="#/estudo">Ver guias de estudo</a></div>
    <span class="nota mao">escreva aqui a primeira linha da sua aprovação</span>
   </div>
@@ -224,7 +224,7 @@ function enviada(){
  return `<div class="wrap env">
  <span class="mao" style="color:var(--verm);font-size:26px">redação recebida</span>
  <h1 class="syne">Sua redação está a caminho da correção.</h1>
- <p class="lead">${ENDPOINT_REDACAO?'Estamos levando você para o Modo Aprovado. Entre com o Google ou crie a sua senha e a correção aparece na tela.':'Este é o protótipo: no site no ar, você seria levado agora para o Modo Aprovado, com a sua redação já salva.'}</p>
+ <p class="lead">${ENDPOINT_REDACAO?'Estamos levando você para o Modo Aprovado. Entre com o Google ou crie a sua senha e a correção aparece na tela.':'Em breve a correção completa vai abrir aqui, no Modo Aprovado.'}</p>
  <a class="btn lg" href="${MA}/redacao/?${UTM}" target="_blank" rel="noopener">Ver a correção no Modo Aprovado</a>
 </div>`;
 }
